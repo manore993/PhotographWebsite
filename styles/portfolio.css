@@ -1,0 +1,97 @@
+header, footer{
+    background-color: white;
+    padding:20px 50px 20px 50px;
+}
+nav, footer{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+body {
+    background-color:#1F2039;
+}
+section{
+    padding:100px;
+}
+a {
+    color:black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: "Manrope", sans-serif;
+   }
+nav,a{
+    margin-left: 30px;
+}
+a:hover{
+    text-decoration: underline;
+}
+div{
+    color: #242424;
+}
+h1 {
+    font-size: 3.5em;
+    color: #F9F8FF;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+h2 {
+    font-family: "Manrope", sans-serif;
+    color: #242424;
+    margin-bottom: 30px;
+}
+li,ul,ol{
+    font-size: 1.1em;
+    color: #F9F8FF;
+    font-family: "Manrope", sans-serif;
+}
+pr{
+    font-size: 1.1em;
+    color: #F9F8FF;
+    font-family: "Manrope", sans-serif;
+}
+.portfolio-section-photos {
+    background: white;
+}
+.grid-paysages{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+}
+.grid-portraits{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+}
+.grid-paysages img, 
+.grid-portraits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .lien-conteneur-photo{
+    position: relative;
+} */
+.grid-paysages a, 
+.grid-portraits a {
+    position: relative;
+}
+.photo-hover{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display:none; 
+}
+
+.grid-paysages a:hover .photo-hover, .grid-portraits a:hover .photo-hover {
+    display: flex;
+}
